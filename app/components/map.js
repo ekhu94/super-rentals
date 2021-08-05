@@ -7,7 +7,7 @@ export default class MapComponent extends Component {
   get src() {
     const { lng, lat, width, height, zoom } = this.args;
 
-    const coordinates = `${lat},${lng},${zoom}`;
+    const coordinates = `${lng},${lat},${zoom}`;
     const dimensions = `${width}x${height}@2x`;
     const accessToken = `?access_token=${this.token}`;
 

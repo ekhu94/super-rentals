@@ -38,7 +38,7 @@ module('Integration | Component | map', function (hooks) {
     );
 
     assert.ok(
-      src.includes('37.7797,-122.4184,10'),
+      src.includes('-122.4184,37.7797,10'),
       'the src should include the lat,lng,zoom parameter'
     );
 
@@ -73,7 +73,7 @@ module('Integration | Component | map', function (hooks) {
     let img = find('.map img');
 
     assert.ok(
-      img.src.includes('37.7749,-122.4194,10'),
+      img.src.includes('-122.4194,37.7749,10'),
       'the src should include the lat,lng,zoom parameter'
     );
 
@@ -89,7 +89,7 @@ module('Integration | Component | map', function (hooks) {
     });
 
     assert.ok(
-      img.src.includes('37.7749,-122.4194,12'),
+      img.src.includes('-122.4194,37.7749,12'),
       'the src should include the lat,lng,zoom parameter'
     );
 
@@ -104,7 +104,7 @@ module('Integration | Component | map', function (hooks) {
     });
 
     assert.ok(
-      img.src.includes('47.6062,-122.3321,12'),
+      img.src.includes('-122.3321,47.6062,12'),
       'the src should include the lng,lat,zoom parameter'
     );
 
